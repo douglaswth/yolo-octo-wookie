@@ -1,7 +1,10 @@
 install:
 - cinst cygwin -y
+- dir C:\tools\cygwin
+- dir C:\cygwin64
+- dir C:\cygwin
 - RefreshEnv
 build_script:
-- C:\cygwin64\bin\make
+- make
 test_script:
-- C:\cygwin64\bin\make test
+- make test
