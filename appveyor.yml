@@ -1,2 +1,2 @@
 build_script:
-- go build
+- go test -v ./...
