@@ -1,4 +1,7 @@
+install:
+- cinst cygwin -y
+- RefreshEnv
 build_script:
-- where mingw32-make make
+- C:\cygwin64\bin\make
 test_script:
-- echo test
+- C:\cygwin64\bin\make test
