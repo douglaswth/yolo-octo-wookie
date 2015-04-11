@@ -3,7 +3,7 @@ install:
 - RefreshEnv
 - cyg-get make
 cache:
-- C:\tools\cygwin
+- C:\tools\cygwin\packages
 build_script:
 - C:\tools\cygwin\bin\make
 test_script:
