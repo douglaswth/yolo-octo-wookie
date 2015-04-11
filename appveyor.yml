@@ -2,6 +2,8 @@ install:
 - cinst cyg-get -y
 - RefreshEnv
 - cyg-get make
+cache:
+- C:\tools\cygwin
 build_script:
 - C:\tools\cygwin\bin\make
 test_script:
