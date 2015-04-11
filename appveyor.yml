@@ -1,5 +1,5 @@
 install:
-- dir C:\Program Files\AppVeyor\BuildAgent
+- dir "C:\Program Files\AppVeyor\BuildAgent"
 - appveyor
 #- cinst cyg-get -y
 #- cyg-get make
