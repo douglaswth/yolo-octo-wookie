@@ -6,6 +6,7 @@ install:
 cache:
 - C:\tools\cygwin
 build_script:
-- C:\tools\cygwin\bin\make
+- path %PATH%;C:\tools\cygwin\bin
+- make
 test_script:
-- C:\tools\cygwin\bin\make test
+- make test
