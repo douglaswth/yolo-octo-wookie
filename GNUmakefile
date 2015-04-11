@@ -1,5 +1,7 @@
 ifeq ($(OS),Windows_NT)
 EXEEXT:=.exe
+export CC:=x86_64-w64-mingw32-gcc
+export CXX:=x86_64-w64-mingw32-g++
 endif
 
 PROGRAM:=yolo-octo-wookie$(EXEEXT)

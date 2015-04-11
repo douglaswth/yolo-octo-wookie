@@ -1,7 +1,11 @@
 package main
 
+/*
+char *message = "Yolo Octo Wookie!";
+*/
+import "C"
 import "fmt"
 
 func main() {
-	fmt.Println("Yolo Octo Wookie!")
+	fmt.Println(C.GoString(C.message))
 }
