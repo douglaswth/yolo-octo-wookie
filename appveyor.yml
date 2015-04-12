@@ -4,9 +4,11 @@ install:
     $exe=(Split-Path $url -Leaf)
     Start-FileDownload $url
     & ".\$exe" --site http://mirrors.kernel.org/sourceware/cygwin/ --only-site --root C:\cygwin64 --packages make --packages mingw64-x86_64-gcc-g++ --quiet-mode --local-package-dir C:\cygwin64\packages --no-shortcuts --no-startmenu --no-desktop
+    Set-AppveyorBuildVariable PATH "$env:PATH;C:\cygwin64\bin"
 cache:
 - C:\cygwin64
 build_script:
+- dir C:\cygwin64
 - make
 test_script:
 - make test
