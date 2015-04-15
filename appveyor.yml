@@ -3,9 +3,9 @@ clone_folder: C:\projects\go\src\github.com\douglaswth\yolo-octo-wookie
 environment:
   GOPATH: C:\projects\go
 install:
-- dir C:\
-- appveyor SetVariable -Name PATH -Value "%GOPATH%\bin;%PATH%;C:\MinGW\bin"
+- dir C:\cygwin\bin
+- appveyor SetVariable -Name PATH -Value "%GOPATH%\bin;%PATH%;C:\cygwin\bin"
 build_script:
-- mingw32-make
+- make
 test_script:
-- mingw32-make test
+- make test
