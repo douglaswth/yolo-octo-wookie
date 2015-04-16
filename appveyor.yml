@@ -3,7 +3,7 @@ clone_folder: C:\projects\go\src\github.com\douglaswth\yolo-octo-wookie
 environment:
   GOPATH: C:\projects\go
 install:
-- dir C:\Ruby21-x64\DevKit
+- dir C:\Ruby21-x64\DevKit\mingw\bin
 - appveyor SetVariable -Name PATH -Value "%GOPATH%\bin;%PATH%;C:\cygwin\bin"
 build_script:
 - make
