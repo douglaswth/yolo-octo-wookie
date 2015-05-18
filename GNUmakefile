@@ -12,8 +12,8 @@ $(PROGRAM): $(filter-out %_test.go,$(wildcard *.go))
 	go build -v ./...
 
 depend:
-	go get github.com/onsi/ginkgo/ginkgo
-	go get github.com/onsi/gomega
+	go get -v github.com/onsi/ginkgo/ginkgo
+	go get -v github.com/onsi/gomega
 
 test: $(PROGRAM)
 	go test -v ./...
