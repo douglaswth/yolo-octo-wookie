@@ -11,6 +11,9 @@ all: $(PROGRAM)
 $(PROGRAM): $(filter-out %_test.go,$(wildcard *.go))
 	go build -v ./...
 
+depend:
+	go get -v ./...
+
 test: $(PROGRAM)
 	go test -v ./...
 

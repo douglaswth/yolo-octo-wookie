@@ -1,5 +1,7 @@
 language: go
 go:
 - '1.3'
+install:
+  - make depend
 script:
-- make test
+  - make test
