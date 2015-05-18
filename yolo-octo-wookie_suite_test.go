@@ -15,7 +15,7 @@ func TestYoloOctoWookie(t *testing.T) {
 var _ = Describe("Yolo Octo Wookie", func() {
 	Context("The Universe", func() {
 		It("should be okay", func() {
-			Expect(true).To(Equal(true))
+			Expect(true).To(Equal(false))
 		})
 	})
 })
