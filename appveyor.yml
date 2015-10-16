@@ -2,14 +2,8 @@ clone_folder: C:\projects\go\src\github.com\douglaswth\yolo-octo-wookie
 environment:
   GOPATH: C:\projects\go
 install:
-- appveyor DownloadFile https://www.cygwin.com/setup-x86_64.exe
-- >
-  setup-x86_64.exe --site http://mirrors.kernel.org/sourceware/cygwin/ --only-site
-  --root C:\cygwin64 --quiet-mode --local-package-dir C:\cygwin64\packages --no-shortcuts
-  --no-startmenu --no-desktop --packages make --packages mingw64-x86_64-gcc-g++
-- appveyor SetVariable -Name PATH -Value "%GOPATH%\bin;%PATH%;C:\cygwin64\bin"
-cache:
-- C:\cygwin64
+- dir C:\Ruby21-x64\DevKit\mingw\bin
+- appveyor SetVariable -Name PATH -Value "%GOPATH%\bin;%PATH%;C:\cygwin\bin"
 build_script:
 - make
 test_script:
