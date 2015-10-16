@@ -1,7 +1,4 @@
 clone_folder: C:\projects\go\src\github.com\douglaswth\yolo-octo-wookie
-os:
-  - linux
-  - osx
 environment:
   GOPATH: C:\projects\go
 install:
