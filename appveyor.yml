@@ -4,6 +4,7 @@ environment:
 install:
 - dir C:\Ruby21-x64\DevKit\mingw\bin
 - appveyor SetVariable -Name PATH -Value "%GOPATH%\bin;%PATH%;C:\cygwin\bin"
+- where find
 build_script:
 - make
 test_script:
